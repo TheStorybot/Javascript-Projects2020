@@ -6,7 +6,7 @@ document.write(y);
 
 
 var z ="This- is- how- we- do- it."
-window.alert(z);
+window.alert(z); /// variable z shows in the form of a pop-up box///
 
 document.write("T\'was a long time ago.")
 
@@ -32,3 +32,7 @@ var Lizard = Lizard.fontcolor("green");
 document.write(Cat, Dog, Lizard);
 
 document.write(5 + 4) /// completing a method ///
+
+function boxFunction() {
+    document.getElementById("temp").style.backgroundColor = "green";
+  }
