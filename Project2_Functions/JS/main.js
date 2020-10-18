@@ -14,3 +14,11 @@ function concatFunction() {   //creates a new function
     word += "my name is chika chika Slim Shady";
     document.getElementById("concat").innerHTML = word;
 }
+
+function toCelsius(fahrenheit) {
+    return (5/9) * (fahrenheit-32);
+}
+
+document.getElementById("CtoF").innerHTML = toCelsius(90);
+
+
