@@ -53,27 +53,34 @@ function returnFunct(name) {
 }
 document.getElementById("return").innerHTML = returnFunct("Dylan");
 
+
 let pup = {
     breed: "Kleekai",
-    color: "White/Brown",
+    color: "white/brown",
     name: "Ruby",
-    temperament: "Sweet",
-    description : pupFunct() {
-        return "My dog is a " + this.temperment + this.color + this.breed + " named, " + this.name;
+    temperament: "sweet",
+    description : function() {
+        return "My dog is a " + this.temperament + ", " + this.color + ", " + this.breed + " named, " + this.name;
     }
 };
-document.getElementById("pup").innerHTML = dog.description();
+document.getElementById("pup").innerHTML = pup.description();
 
 function breakFunct() {
+    var text = "";
+    var x;
     for (x = 0; x < 15; x++) {
         if (x === 7) { break; }
+        text += "This is number " + x + ". <br>";
     }
-    document.getElementById("break").innerHTML = "This is number " + x + ". <br>";
+    document.getElementById("break").innerHTML = text;
 }
 
 function continueFunct() {
+    var text = "";
+    var x;
     for (x = 0; x < 15; x++) {
         if (x === 7) { continue; }
+        text += "This is number " + x + "<br>";
     }
-    document.getElementById("continue").innerHTML = "This is number " + x + ". <br>";
+    document.getElementById("continue").innerHTML = text;
 }
