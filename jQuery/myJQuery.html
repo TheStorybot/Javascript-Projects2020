@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>   <!--- called the jquery library -->
+    </head>
+    <body>
+        <div id='container'>
+            <div id='inner'>
+                <h1 id="shoo">Click me to shoo away the spooky ghost</h1>
+                <p id='1' style="font-size: 30px;">OOOOWWwwwwOOOOWwwwOOOOOO</p>
+            </div>
+        </div>
+    </body>
+    <script>
+
+         $("#shoo").click(function() {  // calls and assigns the jquery .click function to the shoo ID
+             $('#1').fadeOut(800);      // utilized the fade effect on the <p> with 1 ID
+        });
+
+    </script>
+</html>
