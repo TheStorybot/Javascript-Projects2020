@@ -89,6 +89,6 @@ keys.addEventListener('click', (event) => {
         Update_Display();
         return;
     }
-    Input_Digit(target.value);
+    Input_Digit(target.value);   // takes input and displays on calculator-screen
     Update_Display();
 })
